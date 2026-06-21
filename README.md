@@ -1,0 +1,13 @@
+# 🛡️ Akıllı E-Ticaret Yorum Moderasyon Sistemi
+### 🤖 Kendi Kendini Besleyen (Self-Feeding) Çoklu Referans & Nesne Algılama Motoru
+
+Bu proje, e-ticaret platformlarındaki (Trendyol, Hepsiburada vb.) kullanıcı ürün yorum görsellerini otomatize edilmiş bir süzgeçten geçirerek manipülatif, hatalı veya alakasız içerikleri engellemek amacıyla geliştirilmiş **veri merkezli (Data-Centric) bir yapay zeka** moderasyon sistemidir. 
+
+Proje, geleneksel statik sınıflandırma modellerinin aksine, yaşayan ve kendi kararlarından beslenen dinamik bir mimariye sahiptir.
+
+### 🚀 Öne Çıkan Core Özellikler
+
+* **Çift Aşamalı Hibrit Süzgeç:** Yüklenen görseller öncelikle **YOLOv8** nesne algılama modeliyle taranarak kargo kutusu, paket veya poşet gibi ürünü gölgeleyen unsurları tespit eder ve anında eler. İkinci aşamada ise **OpenAI'ın CLIP (Vision Transformer)** modeli kullanılarak görsel ile ürün arasındaki anlamsal (semantic) benzerlik ölçülür.
+* **Kendi Kendini Besleyen (Self-Feeding) Mimari:** Sistem, belirlenen güvenli eşik değerini (%65+) geçen ve temiz çıkan gerçek kullanıcı ev ortamı fotoğraflarını otomatik olarak izole bir **`referanslar`** havuzuna dahil eder. 
+* **Çoklu Referans Eşleştirme (Multi-View Matching):** Havuzda biriken gerçek kullanıcı resimleri sayesinde sistem; ışık patlamaları, ters açılar ve ev ortamı doku farklılıkları gibi kararsızlık senaryolarını, en yüksek benzerlik skorunu (`max_similarity`) baz alarak aşar. Böylece sistemin hatalı reddetme (*False Negative*) oranı zamanla sıfıra yaklaşır.
+* **Veri Zehirlenmesi (Model Poisoning) Koruması:** İzole klasör yapısı ve matematiksel erken durdurma (*Early Stopping*) optimizasyonları sayesinde, alakasız ürünler (örneğin adaptör seçiliyken yüklenen bir kahve makinesi) sisteme girdiğinde 900+ referanslık havuzda kilitlenme yaratmadan saniyeler içinde tespit edilir ve sistem zekasının zehirlenmesi engellenir.

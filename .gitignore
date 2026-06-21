@@ -1,0 +1,21 @@
+# Yapay zeka modellerini engelle
+*.pt
+*.pkl
+*.h5
+
+# Kullanıcı yorum resimlerini ve sonradan oluşan referansları engelle
+# (Sadece ana ürün stüdyo resimleri yüklensin, havuz şişmesin)
+**/referanslar/
+tonny_ayakkabi/
+apple_adaptor/
+karaca_kahve_yorumlar/
+jeven_brus_parfum_yorumlar/
+
+# Python ve Streamlit geçici dosyaları
+__pycache__/
+.streamlit/
+*.pyc
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
