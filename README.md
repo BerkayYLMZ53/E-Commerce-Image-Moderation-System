@@ -1,7 +1,5 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/type=waving&color=auto&height=220&section=header&text=IMAGE%20MODERATION%20SYSTEM&fontSize=38&animation=fadeIn&fontColor=ffffff" alt="Banner" />
-</p>
-
+<img width="1644" height="957" alt="Banner" src="https://github.com/user-attachments/assets/c0d05e4d-ffc9-48a1-8a8b-9c0a4f00ffbe" />
+<br>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
