@@ -8,12 +8,13 @@
 </p>
 
 <br>
-# 🛡️ Akıllı E-Ticaret Yorum Moderasyon Sistemi
-### 🤖 Kendi Kendini Besleyen (Self-Feeding) Çoklu Referans & Nesne Algılama Motoru
+# 🛡️ Smart E-Commerce Review Moderation System 
 
-Bu proje, e-ticaret platformlarındaki (Trendyol, Hepsiburada vb.) kullanıcı ürün yorum görsellerini otomatize edilmiş bir süzgeçten geçirerek manipülatif, hatalı, alakasız içerikleri veya kargo kutularını engellemek amacıyla geliştirilmiş **veri merkezli (Data-Centric) bir yapay zeka** moderasyon sistemidir. 
+### 🤖 Self-Feeding Multi-Reference & Object Detection Engine
 
-Sistem, geleneksel statik sınıflandırma modellerinin aksine, yaşayan ve kendi kararlarından beslenen dinamik bir mimariye sahiptir.
+This project is a data-centric artificial intelligence moderation system developed to filter user product review images on e-commerce platforms (such as Trendyol, Hepsiburada, etc.) through an automated process. It aims to identify and filter out manipulative, erroneous, or irrelevant content, as well as shipping boxes.
+
+Unlike traditional static classification models, the system utilizes a dynamic architecture designed to continuously adapt by learning from its own decisions.
 
 ---
 🚀 **Key Core Features**
