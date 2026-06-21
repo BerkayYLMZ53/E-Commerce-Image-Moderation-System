@@ -59,7 +59,7 @@ This project was developed entirely out of an **original idea and R&D motivation
 
 It emerged from the pursuit of a dynamic solution to improve user experience and data quality on e-commerce platforms, and was designed end-to-end through the lens of Management Information Systems (MIS) and data science. The project is open-source and remains open to further development and scaling by the community.
 
-## 📊 Sistem Akış Mimarisi (Workflow)
+## 📊 System Workflow Architecture (Workflow)
 
 ```mermaid
 graph TD
