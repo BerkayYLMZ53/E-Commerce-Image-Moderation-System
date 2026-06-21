@@ -63,18 +63,18 @@ It emerged from the pursuit of a dynamic solution to improve user experience and
 
 ```mermaid
 graph TD
-    A[Kullanıcı Yorum Resmi Yüklenir] --> B{YOLOv8 Süzgeci}
-    B -- Kargo Kutusu/Poşet Tespit Edildi --> C[❌ REDDEDİLDİ: Kargo Kutusu]
-    B -- Temiz Görsel --> D[CLIP Vision Transformer]
+    A[User Uploads Review Image] --> B{YOLOv8 Filter}
+    B -- Shipping Box/Bag Detected --> C[❌ REJECTED: Shipping Box]
+    B -- Clean Image --> D[CLIP Vision Transformer]
     
-    D --> E{Çoklu Referans Kıyaslaması <br> max_similarity}
-    E -- Skor < %65 Benzerlik Yetersiz --> F[❌ REDDEDİLDİ: Alakasız Resim]
-    E -- Skor >= %65 Başarılı --> G[✅ ONAYLANDI]
+    D --> E{Multi-Reference Comparison <br> max_similarity}
+    E -- Score < 65% Insufficient Similarity --> F[❌ REJECTED: Irrelevant Image]
+    E -- Score >= 65% Success --> G[✅ APPROVED]
     
-    G --> H[Benzersiz Zaman Damgası ile İsimlendirme]
-    H --> I[💾 referanslar/ Klasörüne Dinamik Kayıt]
-    I --> J[🧠 Aktif Hafıza Havuzunun Büyümesi]
-    J -->|Bir sonraki denetimde referans olarak kullanılır| E
+    G --> H[Rename with Unique Timestamp]
+    H --> I[💾 Dynamic Save to references/ Folder]
+    I --> J[🧠 Growth of Active Memory Pool]
+    J -->|Used as reference for subsequent checks| E
 
 
 
